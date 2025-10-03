@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pequeños Pasos, Gran Impacto</title>
+        <link rel="stylesheet" href="static\style.css">
+    </head>
+    <body>
+        <nav>
+            <div class="logo">
+                <img src="static\images\Pequeños Pasos.jpg" alt="logo">
+            </div>
+
+            <ul class="menu">
+                <li>
+                    <a href="/">
+                        <img src="static\images\back.jpg" alt="">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <main>
+            {% block content %}
+            <h2 class="main__title">Especifique el número de dispositivos que utilizan electricidad:</h2>
+            <ul class="list" id="list">
+            <li class="list__item">
+                <a href={{light + "/3" }}>
+                <img class="item__img" src="static/images/battery.svg" alt="battery">
+                <span>3-5 aparatos</span></a>
+            </li>
+            <li class="list__item">
+                <a href={{light + "/7" }}>
+                <img class="item__img" src="static/images/battery.svg" alt="battery">
+                <span>6-8 aparatos</span></a>
+            </li>
+            <li class="list__item">
+                <a href={{light + "/10" }}>
+                <img class="item__img" src="static/images/battery.svg" alt="battery">
+                <span>10+ aparatos</span></a>
+            </li>
+            </ul>
+            {% endblock %}
+        </main>
+    </body>

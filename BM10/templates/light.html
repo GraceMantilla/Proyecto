@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pequeños Pasos, Gran Impacto</title>
+        <link rel="stylesheet" href="static\style.css">
+    </head>
+    <body>
+        <nav>
+            <div class="logo">
+                <img src="static\images\Pequeños Pasos.jpg" alt="logo">
+            </div>
+
+            <ul class="menu">
+                <li>
+                    <a href="/">
+                        <img src="static\images\back.jpg" alt="">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <main>
+            {% block content %}
+            <h2 class="main__title">Seleccione cuántas lámparas hay en su hogar:</h2>
+            <ul class="list" id="list">
+            <li class="list__item">
+                <a href={{size + "/3" }}>
+                <img class="item__img" src="static/images/light.svg" alt="light">
+                <span>2-4 lámparas</span></a>
+            </li>
+            <li class="list__item">
+                <a href={{size + "/7" }}> 
+                <img class="item__img" src="static/images/light.svg" alt="light">
+                <span>4-6 lámparas</span></a>
+            </li>
+            <li class="list__item">
+                <a href={{size + "/10" }}>
+                <img class="item__img" src="static/images/light.svg" alt="light">
+                <span>8+ lámparas</span></a>
+            </li>
+            </ul>
+            {% endblock %}
+        </main>
+    </body>

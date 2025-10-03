@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pequeños Pasos, Gran Impacto</title>
+        <link rel="stylesheet" href="static\style.css">
+    </head>
+    <body>
+        <nav>
+            <div class="logo">
+                <img src="static\images\Pequeños Pasos.jpg" alt="logo">
+            </div>
+
+            <ul class="menu">
+                <li>
+                    <a href="/">
+                        <img src="static\images\back.jpg" alt="">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <main>
+            {% block content %}
+            <h2 class="main__title"> SELECCIONA EL TAMAÑO DE TU HOGAR</h2>
+            <ul class="list">
+            <li class="list__item">
+                <a href="/1">
+                <img class="item__img" src="static/images/home.svg" alt="home">
+                <span>Un hogar pequeño</span></a>
+            </li>
+            <li class="list__item">
+                <a href="/2">
+                <img class="item__img" src="static/images/home.svg" alt="home">
+                <span>Un hogar mediano</span></a>
+            </li>
+            <li class="list__item">
+                <a href="/3">
+                <img class="item__img" src="static/images/home.svg" alt="home">
+                <span>Un hogar grande</span></a>
+            </li>
+            </ul>
+            {% endblock %}
+        </main>
+    </body>

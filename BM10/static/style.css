@@ -1,0 +1,390 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e8ebea;
+  text-align: center;
+  scroll-behavior: smooth;
+}
+
+/* Navegador */
+nav {
+  display: flex;                 
+  justify-content: space-between; 
+  align-items: center;          
+  background: #373737;
+  padding: 20px 30px;
+}
+
+.logo img {
+  width: 200px;  
+  height: auto;
+}
+
+.menu {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu img {
+  width: 40px;
+  height: auto;
+  transition: transform 0.2s;
+}
+
+.menu img:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+/* Header */
+.header {
+  min-height: 400px; 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 150px 30px;
+  background-image: url('https://www.ecoticias.com/wp-content/uploads/2024/06/Que-es-el-medio-ambiente-750x476.jpg');
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.header_text {
+  font-size: 30px;
+  margin: 0 200px;
+  color: #e8ebea;
+  text-align: center;
+}
+
+.header_text p {
+  font-size: 20px;
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+/* Que es (Primera explicacion) */
+.que_es h2{
+  margin-top: 150px;  
+  margin-bottom: 30px; 
+  margin-left: 75px;
+  color: #57a347;
+  text-align: left;
+  font-size: 40px;
+  line-height: 1.5;
+}
+
+.que_es p{
+  margin: 20px 75px;
+  text-align: justify;
+  font-size: 20px;
+  line-height: 1.8;
+}
+
+.porque_ocurre h2{
+  margin-top: 150px;  
+  margin-bottom: 30px; 
+  margin-right: 75px;
+  color: #57a347;
+  text-align: right;
+  font-size: 40px;
+  line-height: 1.5;
+}
+
+.porque_ocurre p{
+  margin: 20px 75px;
+  text-align: right;
+  font-size: 20px;
+  line-height: 1.8;
+}
+
+/* Historia (video) */
+.historia h2{
+  margin-top: 75px;  
+  margin-left: 40px;
+  text-align: left;
+  color: #373737;
+  font-size: 25px;
+}
+
+
+/* Impacto (Causas) */
+.Impacto_causas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;  
+  margin: 70px 75px;
+}
+
+.Causas_img img{
+  width: 500px;           
+  height: auto;
+  margin-top: 20px;
+}
+
+.Causas h2 {
+  color: #57a347;
+  text-align: left;
+  font-size: 40px;
+  margin-bottom: 75px;
+}
+
+.Causas ul {
+  list-style: none;
+  padding: 0;
+}
+
+.Causas li {
+  display: flex;          
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #000000;
+}
+
+.Causas img {
+  width: 25px;
+  height: 25px;
+  margin-right: 20px;
+}
+
+/* Impacto (Consecuencias) */
+.Impacto_consecuencias {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 150px;
+  margin-bottom: 30px;
+  margin-left: 75px;
+  margin-right: 75px;
+}
+
+.Consecuencias_img img{
+  width: 500px;           
+  height: auto;
+}
+
+.Consecuencias h2 {
+  color: #57a347;
+  text-align: right;
+  font-size: 40px;
+  margin-bottom: 75px;
+}
+
+.Consecuencias ul {
+  list-style: none;
+  padding: 0;
+}
+
+.Consecuencias li {
+  display: flex;          
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #000000;
+}
+
+.Consecuencias img {
+  width: 25px;
+  height: 25px;
+  margin-right: 20px;
+}
+
+/* Como ayudar */
+.Ayuda-titulo h2 {
+  margin-top: 150px;  
+  margin-bottom: 30px; 
+  color: #57a347;
+  text-align: center;
+  font-size: 40px;
+  line-height: 1.5;
+}
+
+.Ayuda {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  gap: 20px;                      
+  margin: 20px;
+}
+
+.grid-ayuda {
+  background-color: #e8ebea;
+  padding: 40px;
+  text-align: justify;
+  font-size: 20px;
+  line-height: 1.8;
+  margin: 20px 75px;
+}
+
+.grid-ayuda h3 {
+  color: #373737;
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+/* Mide tu consumo(Calculadora energetica */
+.Midete {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 50px;
+}
+
+.Midete h2{
+  margin-top: 150px;  
+  margin-bottom: 30px; 
+  margin-left: 75px;
+  color: #57a347;
+  text-align: left;
+  font-size: 100px;
+  line-height: 1.5;
+}
+
+.boton {
+  display: inline-block;  
+  color: #e8ebea;                
+  background-color: #373737; 
+  text-decoration: none;
+  text-align: center;
+  align-items: center;
+  padding: 40px 100px;            
+  font-size: 25px; 
+  gap: 20px;
+  transition: 0.2s;
+  border: none;   
+  position: relative;  
+  cursor: pointer;
+}
+
+.boton:hover {
+  background-color: #57a347;
+}
+
+.cont-boton {
+  display: flex;
+  margin-right: 75px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* FOOTER */
+.footer {
+  background-color: #373737;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer h3 {
+  margin-bottom: 15px;
+  font-size: 22px;
+}
+
+.Opiniones {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  max-width: 400px;
+  margin: 0 auto 20px;
+}
+
+.Opiniones input,
+.Opiniones textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+.Opiniones button {
+  background-color: #57a347;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.Opiniones button:hover {
+  background-color: #45b845;
+  box-shadow: 0 0 10px #45b845;
+}
+
+.footer-nota {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/* BOTON CALCULADORA */
+main {
+  padding: 0 30px 100px;
+  font-family: Arial, sans-serif;
+}
+
+.main__title {
+  margin-top: 150px;  
+  margin-bottom: 150px; 
+  color: #57a347;
+  text-align: center;
+  font-size: 40px;
+  line-height: 1.5;
+}
+
+.list {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.list__item a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: inherit;
+  font-weight: bold;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 24px;
+  border: 1px solid #EB8028;
+  transition: 0.2s;
+}
+.item__img {
+  object-fit: contain;
+  width: 150px;
+}
+
+.list__item a:hover {
+  box-shadow: 1px 1px 4px 4px #57a347;
+}
+
+/* END */
+.main__rez {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.rez__img {
+    object-fit: contain;
+    width: 300px;
+}
+
+.main__title--margin {
+    margin-bottom: 50px;
+}
